@@ -1,0 +1,24 @@
+Time Complexity:
+    It is the amount of time taken by an algorithm to run.
+    As a function of length of the input.
+
+Why?
+    For making better programs.
+    Comparison of algorithm.
+
+Big O -> Upper Bound
+Theta -> For Avg-Case Complexity
+Omega -> Lower Bound
+
+->Constant Time -> O(1) 
+->Linear Time -> O(n)
+->Logarthmic Time -> O(logn)
+->Quadratic Time -> O(n^2)
+->Cubic Time -> (n^3)
+
+10^8 operation rule:
+    Most of the modern machine can perform 10^8 operation per second.
+
+
+Space Complexity:
+    Total amount of memory space used by an algorithm or program.
