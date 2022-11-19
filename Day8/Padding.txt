@@ -1,0 +1,24 @@
+Processor doesn't read 1 byte at a time from memory.
+
+It reads 1 word at a time.
+
+If we have a 32 bit processor then it means it can access 4 bytes at a time which means word size is 4 bytes.
+
+If we have a 64 bit processor then it means it can access 8 bytes at a time which means word size is 8 bytes.
+
+In 32 bit architecture:
+
+struct abc {
+char a; //1 byte
+char b; //1 byte
+int c; //4 bytes
+} var;
+
+In 1 CPU cycle, char a, char b and 2 bytes of int c can be accessed. There is no problem with char a and char b but...
+
+Whenever we want the value stored in variable c, 2 cycles are required to access the contents of variable c. In first cycle, 1st 2 bytes can be accessed and in 2nd cycle, last 2 bytes.
+
+Its an unnecessary wastage of CPU cycles.
+
+We can save the number of cycles by using the concept called padding
+
